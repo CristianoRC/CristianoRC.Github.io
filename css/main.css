@@ -1,0 +1,945 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+}
+
+/*=====================================================================
+	Helpar css
+=======================================================================*/
+.section_padding{
+	padding:100px 0;
+}
+
+/*=====================================================================
+	css for header area
+=======================================================================*/
+.header_overlay{
+	background:url(../img/slider-overlay.png) repeat scroll 0 0;
+	position:absolute;
+	height:100%;
+	width:100%;
+	left:0;
+	bottom:0;
+	z-index:14;
+	padding-top:40px;
+}
+.carousel .carousel-indicators {
+  position: absolute;
+  right: 5%;
+  top: 48%;
+  z-index: 15;
+  text-align:right;
+  padding:0;
+}
+.carousel-indicators li {
+display:block;
+}
+.carousel-indicators li:nth-child(2){
+ margin-bottom: 10px;
+margin-top: 10px;
+}
+.header_top{
+	margin-bottom:115px;
+}
+.manu_div {
+  position: fixed;
+  right: 5%;
+  text-align: right;
+  top: 5%;
+  z-index: 16;
+}
+.menu-active {
+  right: 20%;
+}
+.manu_div button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 30px;
+}
+.manu_div button:hover {
+  color:#2ec06c;
+}
+.cbp-spmenu {
+  background: #171717 none repeat scroll 0 0;
+}
+.cbp-spmenu img {
+  padding-left: 25px;
+  padding-top: 40px;
+  padding-bottom:10px;
+}
+.cbp-spmenu-vertical a {
+  border-bottom: medium none;
+  color: #c4c4c4;
+  font-family: "asapregular";
+  font-size: 18px;
+  padding: 15px 25px;
+  text-transform:uppercase;
+}
+.cbp-spmenu-vertical a:hover{
+  color: #fff;
+  font-family: "asapbold";
+  text-decoration:none;
+  background: none;
+}
+.header_text{
+	margin-bottom:250px;
+}
+.header_text h1 {
+  color: #fff !important;
+  font-family: "karlaregular";
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0;
+}
+.header_text h1 span{
+	font-family: 'karlabold';
+}
+.header_promo {
+  color: #fff;
+  text-align:center;
+}
+.single_promo{
+	padding-top:60px;
+}
+.single_promo i {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 30px;
+  height: 60px;
+  padding-top: 15px;
+  width: 60px;
+  margin-bottom:30px;
+}
+.single_promo h2 {
+  font-family: "karlaregular";
+  font-size: 24px;
+  margin: 0 0 40px;
+}
+.single_promo a {
+  font-family: "karlaregular";
+  background:#27AE60;
+  height:50px;
+  display:block;
+  font-size:18px;
+  padding:12px 0;
+  color:#fff;
+  display:none;
+}
+.single_promo a:hover {
+  text-decoration:none;
+}
+.single_promo:hover{
+	width:100%;
+	height:187px;
+	padding-top:30px;
+}
+.single_promo:hover.single_promo a{
+	display:block;
+}
+
+/*=====================================================================
+	css for Hareme area
+=======================================================================*/
+.hireme_text {
+  background: rgba(0, 0, 0, 0) url("../img/hire_bg.jpg") repeat scroll 0 0;
+  display: block;
+  height: 585px;
+  padding-right: 0;
+}
+.hireme_inner {
+  float: right;
+  padding: 100px 20px 20px;
+  width: 580px;
+}
+.hireme_inner h2 {
+  color: #191919;
+  font-family: "asapregular";
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.hireme_inner h2 span{
+ font-family: 'asapbold';
+}
+.hireme_inner p {
+  color: #404040;
+  font-family: "karlaregular";
+  font-size: 16px;
+  line-height: 29px;
+  text-align: justify;
+}
+.hireme_inner a{
+  border: 2px solid #2ec06c;
+  border-radius: 5px;
+  color: #2ec06c;
+  display: inline-block;
+  font-family: "asapregular";
+  font-size: 18px;
+  line-height: 29px;
+  margin-top: 50px;
+  padding: 20px 70px;
+}
+.hireme_inner a:hover{
+text-decoration:none;
+background:#2ec06c;
+color:#fff;
+border-radius:50px;
+}
+.my_work {
+  margin-right: 10px;
+}
+.hair_me{
+	margin-left: 10px;
+	margin-right: 40px;
+}
+.hireme_slider {
+  padding-left: 0;
+}
+#hireme_slide .item img {
+  height: 584px;
+  width: 100%;
+}
+.hireme_slider .owl-wrapper-outer{
+position:relative;
+	
+}
+.hireme_slider .owl-controls {
+  position: absolute;
+  top: 45%;
+  left:5%;
+}
+.hireme_slider .owl-page {
+  display: block !important;
+}
+.hireme_slider .owl-page span {
+  background: #404040 none repeat scroll 0 0 !important;
+  opacity: 1 !important;
+}
+.hireme_slider .owl-page.active span,.hireme_slider .owl-page:hover span {
+  background: #2ec06c none repeat scroll 0 0 !important;
+}
+
+.hireme_slider .owl-buttons{
+	display:none;
+}
+
+/*=====================================================================
+	css for Sarvice area
+=======================================================================*/
+.service_area{
+padding-bottom:50px;
+}
+.service{
+	text-align:center;
+}
+.service_title h2{
+	color:#202020;
+	font-family: "asapregular";
+	font-size:30px;
+	margin-top:0;
+	margin-bottom:15px;
+}
+.service_title h2 span{
+	font-family: 'asapbold';
+}
+.service_title p{
+	font-family: 'asapregular';
+	color:#202020;
+	font-size:18px;
+	line-height:29px;
+	margin:0 15% 50px;
+}
+.single_servicr {
+  margin-bottom: 50px;
+}
+.service_icon {
+  float: left;
+  width: 80px;
+}
+.service_icon i {
+  color: #2ec06c;
+  font-size: 35px;
+}
+.service_text {
+  float: right;
+  padding-right: 50px;
+  text-align: justify;
+  width: 475px;
+}
+.service_text h3{
+	color:#202020;
+	font-size:20px;
+	line-height:29px;
+	font-family: 'asapbold';
+	margin-top:0;
+	margin-bottom:15px;
+}
+.service_text p{
+	color:#666666;
+	font-size:16px;
+	line-height:20px;
+	font-family: 'karlaregular';
+}
+
+/*=====================================================================
+	css for Sponsor area
+=======================================================================*/
+.sponsor_area {
+  position: relative;
+  text-align: center;
+}
+.sponsor_bg {
+  background: rgba(0, 0, 0, 0) url("../img/sponsor_bg.jpg") no-repeat fixed center center / cover ;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.sponsor_overlay{
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.sponsor_area h3{
+	font-family: 'asapregular';
+	font-size:18px;
+	line-height:20px;
+	color:#fff;
+	margin-bottom:75px;
+}
+.sponsor_inner .owl-buttons {
+  margin-top: -50px;
+  padding-bottom: 50px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.sponsor_inner .owl-prev {
+  background: rgba(0, 0, 0, 0) url("../img/left_nav.png") no-repeat scroll 0 0;
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+.sponsor_inner .owl-prev:hover {
+  background: rgba(0, 0, 0, 0) url("../img/left_nav_h.png") no-repeat scroll 0 0;
+}
+.sponsor_inner .owl-next{
+  background: rgba(0, 0, 0, 0) url("../img/right_nav.png") no-repeat scroll 0 0;
+  float: right;
+  height: 20px;
+  width: 20px;
+  z-index:16;
+}
+.sponsor_inner .owl-next:hover {
+  background: rgba(0, 0, 0, 0) url("../img/right_nav_h.png") no-repeat scroll 0 0;
+}
+
+/*=====================================================================
+	css for Project area
+=======================================================================*/
+.project_area {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.prject_area_title {
+  margin-bottom: 40px;
+}
+.prject_area_title h2{
+color:#202020;
+font-size:30px;
+line-height:40px;
+font-family: 'asapregular';
+margin-top:0;
+margin-bottom:25px;
+}
+.prject_area_title h2 span{
+font-family: 'asapbold';
+color:#2ec06c;
+}
+.prject_area_title p {
+  color: #666666;
+  font-family: "karlaregular";
+  font-size: 16px;
+  line-height: 29px;
+  margin: 0 15% 15px;
+}
+.single_project{
+	margin-bottom:20px;
+}
+.work_img{
+	position:relative;
+}
+.project_overlay {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #2EC06C none repeat scroll 0 0;
+	transform: scale(0);
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+	opacity:0.9;
+}
+.project_overlay a {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "asapregular";
+  font-size: 16px;
+  left: 27%;
+  padding: 15px 40px;
+  position: absolute;
+  top: 40%;
+}
+.project_overlay .button {
+  border: 3px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 1px;
+  outline: medium none;
+  overflow: hidden;
+  padding: 15px 40px;
+  position: relative;
+  text-transform: uppercase;
+  top: 40%;
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+}
+.project_overlay .button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 3px solid #fff;
+  color: #fff;
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.project_overlay .button:hover,
+.button:active {
+  color: #2EC06C;
+  text-decoration:none;
+}
+.project_overlay .button:hover:after {
+  height: 225%;
+  opacity: 1;
+}
+.project_overlay .button:active:after {
+  height: 225%;
+  opacity: 1;
+}
+.single_project img {
+  width: 100%;
+  transition: all 1.2s linear;
+}
+.single_project h3 {
+  background: #eeeeee none repeat scroll 0 0;
+  border-radius: 0 0 10px 10px;
+  color: #202020;
+  font-family: "asapregular";
+  font-size: 20px;
+  margin: 0;
+  padding: 25px 0;
+}
+.single_project:hover div.project_overlay {
+	transform: scale(1);
+}
+
+/*=====================================================================
+	css for Testmonial area
+=======================================================================*/
+.testmonial_area{
+position:relative;
+color:#fff;
+text-align:center;
+}
+.testmonial_bg {
+  background: rgba(0, 0, 0, 0) url("../img/feedback_bg.jpg") no-repeat fixed center center / cover ;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.testmonial_overlay{
+  background:url(../img/feedback_ov.png) repeat;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.testmonial i {
+  color: #2EC06C;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.c_comment{
+	font-family: 'asapregular';
+	font-size:18px;
+	line-height:29px;
+	margin-top:0;
+	margin-bottom:30px;
+}
+.c_name{
+	font-family: 'asapbold';
+	color:#2EC06C;
+	font-size:18px;
+	margin-top:0;
+	margin-bottom:50px;
+}
+.c_name span{
+	font-family: 'asapitalic';
+	color:#fff;
+	font-size:16px;
+}
+.testmonial div.owl-page span {
+  background: #b3b3b3 none repeat scroll 0 0 !important;
+  opacity: 1 !important;
+}
+.testmonial .owl-page.active span,.testmonial .owl-page:hover span {
+  background: #2ec06c none repeat scroll 0 0 !important;
+}
+
+/*=====================================================================
+	css for Contact area
+=======================================================================*/
+.contact_area {
+  padding-bottom: 171px;
+}
+.contact_a_title{
+	text-align:center;
+	margin-bottom:45px;
+}
+.contact_a_title h2{
+	font-family: 'asapregular';
+	color:#202020;
+	font-size:30px;
+	line-height:40px;
+	margin-top:0;
+	margin-bottom:25px;
+}
+.contact_a_title h2 span{
+	font-family: 'asapbold';
+	color:#2EC06C;
+}
+.contact_a_title p{
+	color:#666666;
+	font-family: 'karlaregular';
+	font-size:16px;
+	margin:0 15% 15px;
+}
+.single_social a {
+  border: 1px solid;
+  border-radius: 5px;
+  display: block;
+  font-size: 60px;
+  height: 180px;
+  margin-bottom: 35px;
+  padding-top: 25%;
+  text-align: center;
+}
+.facebook{
+	border-color:#3b5998;
+	color:#3b5998;
+	
+}
+.facebook:hover{
+	color:#fff;
+	border-color:#3b5998;
+}
+.fb_link .hvr-bounce-to-bottom:before {
+  background: #3b5998 none repeat scroll 0 0;
+}
+.twitter{
+	border-color:#00aced;
+	color:#00aced;
+}
+.twitter:hover{
+	border-color:#00aced;
+	color:#fff;
+}
+.tw_link .hvr-bounce-to-bottom:before {
+  background: #00aced none repeat scroll 0 0;
+}
+.instagram{
+	border-color:#517fa4;
+	color:#517fa4;
+}
+.instagram:hover{
+	border-color:#517fa4;
+	color:#fff;
+}
+.int_link .hvr-bounce-to-bottom:before {
+  background: #517fa4 none repeat scroll 0 0;
+}
+.dribbble{
+	border-color:#ff0084;
+	color:#ff0084;
+}
+.dribbble:hover{
+	border-color:#ff0084;
+	color:#fff;
+}
+.dri_link .hvr-bounce-to-bottom:before {
+  background: #ff0084 none repeat scroll 0 0;
+}
+.contact_box input[type="text"], .contact_box input[type="mail"], .contact_box input[type="numbar"], .contact_box textarea {
+  color: #666666;
+  font-family: "asapregular";
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px !important;
+}
+.contact_box input[type="text"],
+.contact_box input[type="mail"],
+.contact_box input[type="numbar"]{
+	height:45px;
+}
+.contact_box .form-control:focus {
+  border-color: #2EC06C;
+  box-shadow: none;
+  outline: 0 none;
+}
+.massage_a{
+	position:relative;
+}
+.massage_s {
+  background: #2ec06c none repeat scroll 0 0;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  height: 100%;
+  padding-left: 15px;
+  padding-top: 102px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  width: 50px;
+  z-index: 2;
+}
+.massage_s i{
+color:#fff;
+
+}
+
+/*=====================================================================
+	css for Footer area
+=======================================================================*/
+.footer_area {
+  background: #eeeeee none repeat scroll 0 0;
+  margin: 0;
+  padding: 15px;
+}
+.footer_area p{
+	font-family: 'asapitalic';
+	font-size:16px;
+	color:#2f2f2f;
+	margin:0;
+}
+.footer_area p a{
+	font-family: 'asapbold';
+	color:#2ec06c;
+}
+.footer_area p a:hover{
+	text-decoration:none;
+}
+.main-bg{}
+.fa-paper-plane{}
+
+
+/*=====================================================================
+	css for oel helper
+=======================================================================*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

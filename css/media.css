@@ -1,0 +1,142 @@
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+.contact_box input[type="text"], .contact_box input[type="mail"], .contact_box input[type="numbar"], .contact_box textarea {
+  margin-bottom: 29px;
+}
+}
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.menu-active {
+  right: 35%;
+}
+.header_text {
+  margin-bottom: 200px;
+}
+.hireme_inner {
+  padding: 50px 20px 20px;
+  width: 380px;
+}
+.hireme_inner p {
+  line-height: 25px;
+}
+.hireme_inner a {
+  padding: 15px 43px;
+}
+.my_work {
+  margin-left: 0;
+}
+.hair_me {
+  margin-right: 0;
+}
+#hireme_slide .item img {
+  height: 584px;
+}
+.service_icon {
+  width: 60px;
+}
+.service_text {
+  padding-right: 0;
+  width: 285px;
+}
+.single_social a {
+  padding-top: 50%;
+}
+
+
+
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.menu-active {
+  right: 80%;
+}
+.header_text {
+  margin-bottom: 0;
+}
+.header_promo {
+  display: none;
+}
+.hireme_inner {
+  float: none;
+  padding: 50px 20px 20px;
+  width: 320px;
+}
+.hireme_inner h2 {
+  margin-bottom: 10px;
+}
+.hireme_inner p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.hireme_inner a {
+  padding: 10px 25px;
+  margin-top:30px;
+}
+.my_work {
+  margin-left: 12px;
+  margin-right:5px;
+}
+.hair_me {
+  margin-right: 12px;
+  margin-left:5px;
+}
+#hireme_slide .item img {
+  height: 450px;
+}
+.service_icon {
+  width: 60px;
+}
+.service_text {
+  padding-right: 20px;
+  width: 230px;
+}
+.single_social a {
+  padding-top: 40%;
+}
+
+
+
+
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.menu-active {
+  right: 45%;
+}
+.header_promo {
+  display: none;
+}
+.header_text {
+  margin-bottom: 0;
+}
+.hireme_inner {
+  float: none;
+  padding: 50px 20px 52px;
+  width: 480px;
+}
+.hireme_inner h2 {
+  padding-left: 20px;
+}
+.hireme_inner p {
+  padding: 0 20px;
+}
+.hireme_inner a {
+  padding: 10px 48px;
+}
+.service_text {
+  padding-right: 20px;
+  width: 370px;
+}
+.footer_area p {
+  font-size: 14px;
+}
+
+
+
+}
