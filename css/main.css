@@ -322,7 +322,7 @@ margin-top: 10px;
   font-size: 30px;
 }
 .manu_div button:hover {
-  color:#2ec06c;
+  color:#789685;
 }
 .cbp-spmenu {
   background: #171717 none repeat scroll 0 0;
@@ -434,9 +434,9 @@ margin-top: 10px;
   text-align: justify;
 }
 .hireme_inner a{
-  border: 2px solid #2ec06c;
+  border: 2px solid #789685;
   border-radius: 5px;
-  color: #2ec06c;
+  color: #789685;
   display: inline-block;
   font-family: "asapregular";
   font-size: 18px;
@@ -446,7 +446,7 @@ margin-top: 10px;
 }
 .hireme_inner a:hover{
 text-decoration:none;
-background:#2ec06c;
+background:#789685;
 color:#fff;
 border-radius:50px;
 }
@@ -466,7 +466,7 @@ border-radius:50px;
 }
 .hireme_slider .owl-wrapper-outer{
 position:relative;
-	
+
 }
 .hireme_slider .owl-controls {
   position: absolute;
@@ -481,7 +481,7 @@ position:relative;
   opacity: 1 !important;
 }
 .hireme_slider .owl-page.active span,.hireme_slider .owl-page:hover span {
-  background: #2ec06c none repeat scroll 0 0 !important;
+  background: #789685 none repeat scroll 0 0 !important;
 }
 
 .hireme_slider .owl-buttons{
@@ -522,7 +522,7 @@ padding-bottom:50px;
   width: 80px;
 }
 .service_icon i {
-  color: #2ec06c;
+  color: #789685;
   font-size: 35px;
 }
 .service_text {
@@ -625,7 +625,7 @@ margin-bottom:25px;
 }
 .prject_area_title h2 span{
 font-family: 'asapbold';
-color:#2ec06c;
+color:#789685;
 }
 .prject_area_title p {
   color: #666666;
@@ -646,7 +646,7 @@ color:#2ec06c;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background: #2EC06C none repeat scroll 0 0;
+	background: #789685 none repeat scroll 0 0;
 	transform: scale(0);
 	transition-duration: 0.3s;
 	transition-property: transform;
@@ -702,7 +702,7 @@ color:#2ec06c;
 }
 .project_overlay .button:hover,
 .button:active {
-  color: #2EC06C;
+  color: #789685;
   text-decoration:none;
 }
 .project_overlay .button:hover:after {
@@ -756,7 +756,7 @@ text-align:center;
   width: 100%;
 }
 .testmonial i {
-  color: #2EC06C;
+  color: #789685;
   font-size: 35px;
   margin-bottom: 30px;
 }
@@ -769,7 +769,7 @@ text-align:center;
 }
 .c_name{
 	font-family: 'asapbold';
-	color:#2EC06C;
+	color:#789685;
 	font-size:18px;
 	margin-top:0;
 	margin-bottom:50px;
@@ -784,7 +784,7 @@ text-align:center;
   opacity: 1 !important;
 }
 .testmonial .owl-page.active span,.testmonial .owl-page:hover span {
-  background: #2ec06c none repeat scroll 0 0 !important;
+  background: #789685 none repeat scroll 0 0 !important;
 }
 
 /*=====================================================================
@@ -807,7 +807,7 @@ text-align:center;
 }
 .contact_a_title h2 span{
 	font-family: 'asapbold';
-	color:#2EC06C;
+	color:#789685;
 }
 .contact_a_title p{
 	color:#666666;
@@ -828,7 +828,7 @@ text-align:center;
 .facebook{
 	border-color:#3b5998;
 	color:#3b5998;
-	
+
 }
 .facebook:hover{
 	color:#fff;
@@ -883,7 +883,7 @@ text-align:center;
 	height:45px;
 }
 .contact_box .form-control:focus {
-  border-color: #2EC06C;
+  border-color: #789685;
   box-shadow: none;
   outline: 0 none;
 }
@@ -891,7 +891,7 @@ text-align:center;
 	position:relative;
 }
 .massage_s {
-  background: #2ec06c none repeat scroll 0 0;
+  background: #789685 none repeat scroll 0 0;
   border-radius: 0 5px 5px 0;
   color: #fff;
   cursor: pointer;
@@ -926,7 +926,7 @@ color:#fff;
 }
 .footer_area p a{
 	font-family: 'asapbold';
-	color:#2ec06c;
+	color:#789685;
 }
 .footer_area p a:hover{
 	text-decoration:none;

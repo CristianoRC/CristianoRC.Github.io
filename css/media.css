@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
+#2EC06C@media only screen and (min-width: 992px) and (max-width: 1280px) {
 .contact_box input[type="text"], .contact_box input[type="mail"], .contact_box input[type="numbar"], .contact_box textarea {
   margin-bottom: 29px;
 }
@@ -6,7 +6,7 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.menu-active {
+.menu-active {#789685
   right: 35%;
 }
 .header_text {
