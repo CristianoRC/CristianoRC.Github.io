@@ -934,6 +934,15 @@ color:#fff;
 .main-bg{}
 .fa-paper-plane{}
 
+.console {
+  margin-top: 250px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Console", monospace;
+  color: #78767c;
+}
+
 
 /*=====================================================================
 	css for oel helper
