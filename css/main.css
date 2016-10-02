@@ -323,6 +323,7 @@ margin-top: 10px;
 }
 .manu_div button:hover {
   color:#789685;
+  
 }
 .cbp-spmenu {
   background: #171717 none repeat scroll 0 0;
@@ -640,6 +641,10 @@ color:#789685;
 .work_img{
 	position:relative;
 }
+img:hover{
+  -webkit-filter: blur(7px);
+filter: blur(2px);
+}
 .project_overlay {
 	height: 100%;
 	left: 0;
@@ -705,6 +710,10 @@ color:#789685;
   color: #789685;
   text-decoration:none;
 }
+.project_overlay .button:hover .single_project img{
+  -webkit-filter: blur(7px);
+  filter: blur(2px);
+}
 .project_overlay .button:hover:after {
   height: 225%;
   opacity: 1;
@@ -715,7 +724,7 @@ color:#789685;
 }
 .single_project img {
   width: 100%;
-  transition: all 1.2s linear;
+  transition: all 0.50s linear;
 }
 .single_project h3 {
   background: #eeeeee none repeat scroll 0 0;
@@ -728,6 +737,7 @@ color:#789685;
 }
 .single_project:hover div.project_overlay {
 	transform: scale(1);
+  
 }
 
 /*=====================================================================
