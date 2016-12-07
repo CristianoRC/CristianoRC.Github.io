@@ -1,1 +1,1 @@
-1.0.0.0;Painel.NextTeambr.com.br
+1.0.0.0;http://painel.nextteambr.com.br/
