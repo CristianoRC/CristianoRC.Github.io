@@ -387,38 +387,33 @@
 				</div>
 				<div class="col-md-8 col-sm-8 col-xs-12 contact_box">
 					<div class="input-group">
-						<form class="form">
+						<form class="form" method="POST" action="https://simple-form.com/contato@cristianoprogramador.com">
 							<div class="row">
 								<div class="form-group col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay=".2s">
-									<input value="" type="text" class="form-control" id="fast-name" placeholder="Nome">
+									<input value="" type="text" class="form-control" name="Nome" id="fast-name" placeholder="Nome">
 								</div>
 								<div class="form-group col-md-6 col-sm-6 col-xs-12  wow fadeInRight" data-wow-delay=".2s">
-									<input value="" type="text" class="form-control" id="last-name" placeholder="Ultimo Nome">
+									<input value="" type="text" class="form-control" name="Sobrenome" id="last-name" placeholder="Ultimo Nome">
 								</div>
 								<div class="form-group col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay=".3s">
-									<input value="" type="mail" class="form-control" id="email" placeholder="E-Mail Address">
+									<input value="" type="mail" class="form-control" name="Email" id="email" placeholder="E-Mail Address">
 								</div>
 								<div class="form-group col-md-6 col-sm-6 col-xs-12  wow fadeInRight" data-wow-delay=".3s">
-									<input value="" type="numbar" class="form-control" id="project-name" placeholder="Nome do Projeto">
+									<input value="" type="numbar" class="form-control" name="Projeto" id="project-name" placeholder="Nome do Projeto">
 								</div>
 								<div class="form-group col-md-12 col-sm-12 col-xs-12 massage_a  wow fadeInUp" data-wow-delay=".4s">
-									<input value="" type="numbar" class="form-control" id="project-informacoes" placeholder="Informações">
+									<input value="" type="numbar" class="form-control" name="Mensagem" id="project-informacoes" placeholder="Informações">
 								</div>
+
+								<input type="hidden" name="subject" value="Email do site" />
+
+								<button class="btn btn-default btn-block btn-lg" type="submit" value="Send">Enviar</button>
 							</div>
-					</div>
+						</form>
 
-					<div class="alert alert-success">
-						<a href="https://cristianoprogramador.wordpress.com/contato/">
-							<h5>Sistema de e-mail desativado temporariamente</h5>
-						</a>
-						<h5>Contato@CristianoProgramador.com
-							<h5>
 					</div>
-					</form>
-
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 	<!-- End of Contact Area -->
