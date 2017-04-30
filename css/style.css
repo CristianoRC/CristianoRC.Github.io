@@ -1,0 +1,83 @@
+#light1, #light2 {
+  -webkit-animation: flickering 1s ease infinite;
+          animation: flickering 1s ease infinite;
+}
+
+@-webkit-keyframes flickering {
+  0% {
+    fill: #FF9813;
+  }
+  10% {
+    fill: rgba(255, 200, 59, 0.6);
+  }
+  20% {
+    fill: #FFC83B;
+  }
+  30% {
+    fill: orange;
+  }
+  50% {
+    fill: rgba(255, 200, 59, 0.6);
+  }
+  100% {
+    fill: #FFC83B;
+  }
+}
+
+@keyframes flickering {
+  0% {
+    fill: #FF9813;
+  }
+  10% {
+    fill: rgba(255, 200, 59, 0.6);
+  }
+  20% {
+    fill: #FFC83B;
+  }
+  30% {
+    fill: orange;
+  }
+  50% {
+    fill: rgba(255, 200, 59, 0.6);
+  }
+  100% {
+    fill: #FFC83B;
+  }
+}
+body {
+  background: #3f3f3f;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}

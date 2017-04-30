@@ -1,0 +1,48 @@
+#light1, #light2{
+  animation: flickering 1s ease infinite; 
+}
+
+@keyframes flickering {
+  0%{
+    fill: #FF9813;
+  }
+  10%{
+    fill: rgba(#FFC83B,.60);
+  }
+  20%{
+    fill: #FFC83B;
+  }
+  30%{
+    fill: orange;
+  }
+  50%{
+   fill: rgba(#FFC83B,.60);
+  }
+  100%{
+     fill: #FFC83B;
+  }
+  
+}
+
+
+
+body{
+  background: #eee;
+  padding: 2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  
+
+}
