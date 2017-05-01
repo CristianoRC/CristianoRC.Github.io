@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -80,8 +80,8 @@
         </div>
         <div class="col-md-5 col-md-offset-1">
           <p>
-            <a href="https://github.com/cristianorc/" target="_blank"><img src="img/Avatar.jpg" alt="Avatar Cristiano Raffi Cunha" class="img-responsive img-circle blur"></p>
-          </a>
+            <a href="https://github.com/cristianorc/" target="_blank"><img src="img/Avatar.jpg" alt="Avatar Cristiano Raffi Cunha" class="img-responsive img-circle blur"></a>
+          </p>
           <hr>
         </div>
       </div>
@@ -97,23 +97,55 @@
           <div class="row">
             <div class="col-md-12 col-lg-8">
               <h2 class="heading">Portfólio</h2>
-              <p>Aqui você pode encontrar os meus maiores projetos open source que estão no GitHub.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-4">
-              <div class="box blur">
-                <a href="https://github.com/CristianoRC/DotCEP" target="_blank"><img src="img/projetos/DotCEP.png" alt=" " class="img-responsive"></a>
+
+            <ul class="nav nav-pills">
+              <li class="active"><a data-toggle="pill" href="#DotCEP">DotCEP</a></li>
+              <li><a data-toggle="pill" href="#OrdemDeServico">Ordem de serviço</a></li>
+              <li><a data-toggle="pill" href="#LogBookEletronico">LogBook Eletrônico</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="DotCEP" class="tab-pane fade in active">
+                <br>
+                <img style="float: left;width: 250px; height: 250px; margin-right: 60px;" class=".img-thumbnail" src="img/Projetos/DotCEP.png"
+                  alt="DotCEP">
+                <p style="padding-top: 50px;">Biblioteca para facilitar o trabalho com CEP em sofwares desktop, utilizando .NET C#, pode ser utilizada
+                  no Windows e Linux, utilizando o Mono(Windows Forms/ Console Application). Utiliza um sistema de cache
+                  local com SQLite para uma melhor performance e economia do uso de rede. Desenvolvida utilizando o Webservice
+                  da Via Cep. O Webservice contém uma pequena limitação na questão de requisições: Acima de 300 requisições
+                  em menos de 15 minutos com o mesmo IP, poderá haver temporariamente o bloqueio do mesmo.</p>
+                <p><a target="_blank" href="https://github.com/CristianoRC/DotCEP">Ver no GitHub</a></p>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="box blur">
-                <a href="https://github.com/CristianoRC/SoftwareOrdemDeServico" target="_blank"><img src="img/projetos/os.png" alt=" " class="img-responsive"></a>
+
+              <div id="OrdemDeServico" class="tab-pane fade">
+                <br>
+                <img style="float: left;width: 550px; height: 250px; margin-right: 60px;" class=".img-thumbnail" src="img/Projetos/OrdemDeServiço.png"
+                  alt="Ordem de Serviço">
+                <p>Projeto desenvolvido para informatizar o sistema de ordem de serviço, principalmente para a área de equipamentos
+                  eletrônicos. Desenvolvido na plataforma .NET(Windows Forms), utilizando o .NET Framework 4.5 / Mono.
+                </p>
+                <p>
+                  Utilizando-se de um banco de dados SQLite, é possível roda-lo até mesmo em abinetes Linux e Mac, através do MonoProject.
+                </p>
+                <p><a target="_blank" href="https://github.com/CristianoRC/SoftwareOrdemDeServico">Ver no GitHub</a></p>
               </div>
-            </div>
-            <div class="col-sm-4 ">
-              <div class="box blur">
-                <a href="https://github.com/CristianoRC/RemocaoVirusPendrive" target="_blank"><img src="img/projetos/Pendrive.png" alt=" " class="img-responsive"></a>
+
+              <div id="LogBookEletronico" class="tab-pane fade">
+                <br>
+                <img style="float: left;width: 500px; height: 200px; margin-right: 60px;" class=".img-thumbnail" src="img/Projetos/LogBook.png"
+                  alt="LogBookEletronico">
+                <p>Software desenvolvido em Windows Forms, com intuito de simular um sistema de registro de cargas, para a empresa
+                  virtual de Euro Truck Simulator 2 <a href="http://nextteambr.com.br" target="_blank">NextTeamBr</a>.
+                </p>
+                <p>
+                  O sistema cadastra todas os fretes que os motoristas efetuam, para que seja gerado um relatório com essas informações, e
+                  posteriormente um ranking. Contém também um sistema de relatório de multas e informações sobre cargas,
+                  velocidade, distância percorrida entre outros.
+                </p>
               </div>
             </div>
           </div>
