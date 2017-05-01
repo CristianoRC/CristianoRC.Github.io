@@ -16,10 +16,12 @@ body {
 
 .blur{
   filter: none;
+  transition: 0.3s;
 }
 
 .blur:hover{
   filter: blur(2px);
+  transition: 0.3s;
 }
 
 .italic {
