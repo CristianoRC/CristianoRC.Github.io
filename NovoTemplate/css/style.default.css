@@ -14,9 +14,12 @@ body {
   height: 100%;
 }
 
-div.Bordas {
-  background-color: rgba(63, 63, 63, 0.3);
-  padding: 30px 30px 30px 30px;
+.blur{
+  filter: none;
+}
+
+.blur:hover{
+  filter: blur(2px);
 }
 
 .italic {
@@ -344,8 +347,7 @@ NAVBAR
 /* navbar */
 
 .navbar {
-  font-family: "Cardo", "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
   min-height: 40px;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
@@ -625,7 +627,7 @@ NAVBAR
 /* scaffolding */
 
 body {
-  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -981,6 +983,20 @@ p {
 
 .text-primary {
   color: #444444;
+}
+
+a.artigo{
+  color: white;
+  background-color: rgba(1, 1, 1, 0.3);
+  padding: 5px 50px 5px 50px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+a.artigo:hover{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: .5s;
 }
 
 a.text-primary:hover {
