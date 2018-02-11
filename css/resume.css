@@ -153,6 +153,13 @@ a:hover, a:focus, a:active {
 }
 
 .projeto {
-  border-style: solid;
-  border-color: red;
+  margin-bottom: 30px;
+}
+
+.modal-header {
+  background-color: #5bc0de;
+}
+
+.modal-header h5 {
+  color: white;
 }
