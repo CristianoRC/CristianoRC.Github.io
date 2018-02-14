@@ -46,7 +46,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #4A7385;
+  color: #46879C;
 }
 
 .list-social-icons a .fa-lg {
@@ -58,7 +58,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #4A7385;
+  color: #46879C;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -162,4 +162,8 @@ a:hover, a:focus, a:active {
 
 .modal-header h5 {
   color: white;
+}
+
+#sobre p{
+  text-transform: none;
 }
