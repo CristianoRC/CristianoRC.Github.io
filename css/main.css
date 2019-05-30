@@ -1,0 +1,27 @@
+header {
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    background-color: #25303f!important;
+}
+
+#nome{
+    margin-top: 30vh;
+    margin-left: 3vw;
+}
+
+.fonte-branca{
+    color: white;
+}
+
+.fonte-bold{
+    font-weight: bold;
+}
+
+.brand-logo{
+    margin-left: 20px;
+}
