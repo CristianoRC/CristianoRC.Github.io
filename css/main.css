@@ -25,3 +25,22 @@ nav{
 .brand-logo{
     margin-left: 20px;
 }
+.dark-container{
+    background-color: #f4f4f4;
+    padding-left: 7vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.icons-font{
+    font-size: 35pt;
+    color: #3f3f3f;
+}
+
+.container{
+    width: initial!important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
