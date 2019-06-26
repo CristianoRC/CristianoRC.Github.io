@@ -17,12 +17,14 @@
   <meta property="og:description" content="Olá, meu nome é Cristiano, 20 anos, desenvolvedor .NET. Apaixonado por desenvolvimento de software,
   educação e o mundo open source." />
   <meta property="og:image" content="https://cristianoprogramador.com/img/icon.png" />
+
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/padding.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="icon" type="image/png" href="img/icon.png" />
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Cristiano Raffi Cunha</title>
 </head>
@@ -35,7 +37,7 @@
           <img class="materialboxed" width="60" src="img/icon.png">
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a class="menu-selecionado" href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="collapsible.html">Artigos</a></li>
           <li><a href="collapsible.html">Contato</a></li>
@@ -58,7 +60,7 @@
         <div class="row">
           <div class="col s5 left-align">
             <div class="row">
-              <img width="60%" style="border-radius: 50%;" src="./img/profile.jpg" alt="Foto pessoal">
+              <img width="45%" style="border-radius: 50%;" src="./img/profile.jpg" alt="Foto pessoal">
             </div>
             <div class="row">
               <div class="col s1"> <i class="material-icons">add</i></div>
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-    <section id="habilidades">
+    <section class="pb20" id="habilidades">
       <div class="dark-container full-container">
         <div class="row">
           <h4>Habilidades e tecnologias</h4>
@@ -101,13 +103,6 @@
                 faucibus et. Cras sagittis sem vitae tempor lacinia. Maecenas convallis nulla dui, sed tincidunt nunc
                 sollicitudin vitae. Integer efficitur eros diam. Maecenas pellentesque lorem lorem, a rhoncus urna
                 auctor
-                vel. Ut consequat mi non tristique viverra. In sollicitudin, dui a hendrerit pharetra, elit magna
-                bibendum
-                tellus, vitae auctor lacus nulla sit amet enim. Mauris quis elit vitae lectus tempor tincidunt. Duis
-                placerat justo leo, et pellentesque nisl vehicula et. Suspendisse sollicitudin suscipit pellentesque.
-                Nullam in pulvinar tortor. Sed placerat, nulla ut porta congue, diam nulla accumsan massa, a sodales
-                nisl
-                mauris in ante.
               </p>
             </div>
             <div class="row icons-font center-align">
@@ -128,13 +123,13 @@
       </div>
     </section>
 
-    <section id="Cursos">
+    <section class="pb50" id="Cursos">
       <div class="container">
         <div class="row right-align">
           <h4>Cursos</h4>
         </div>
         <dvi class="row">
-          <div class="col s4"><img width="60%" src="./img/Cristiano(logo) Sem Texto.png" alt="Cursos"></div>
+          <div class="col s4"><img width="60%" src="./img/diagram.svg" alt="Cursos"></div>
           <div class="col s8 right-align">
             <ul>
               <li>Balta.io – Criando APIs com ASP.NET Core 2.0 e Dapper </li>
@@ -157,9 +152,9 @@
       </div>
     </section>
 
-    <section id="experiencias">
+    <section class="pb60" id="experiencias">
       <div class="dark-container">
-        <div class="row">
+        <div class="center-align row">
           <h4>Experiências</h4>
         </div>
         <div class="row center-align">
@@ -173,9 +168,9 @@
       </div>
     </section>
 
-    <section id="projetos">
+    <section class="pb50" id="projetos">
       <div class="container">
-        <div class="row">
+        <div class="row center-align">
           <h4>Projetos</h4>
         </div>
         <div class="row">
@@ -223,6 +218,17 @@
 
   </main>
 
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-4 right" href="https://cristianoprogramador.com">© 2019 Cristiano Raffi
+          Cunha</a>
+      </div>
+    </div>
+  </footer>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -230,6 +236,8 @@
       var instances = M.Slider.init(elems, {});
     });
   </script>
+
 </body>
+
 
 </html>

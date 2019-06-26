@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 100vh;
     background-image: url('../img/bg.jpg');
@@ -5,40 +9,63 @@ header {
     background-position: center;
 }
 
-nav{
-    background-color: #25303f!important;
+nav {
+    background-color: #25303f !important;
 }
 
-#nome{
+footer {
+    background-color: #25303f !important;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+
+#nome {
     margin-top: 30vh;
     margin-left: 3vw;
 }
 
-.fonte-branca{
-    color: white;
-}
-
-.fonte-bold{
+.menu-selecionado {
+    color: #17a2b8;
     font-weight: bold;
 }
 
-.brand-logo{
+.fonte-branca {
+    color: white;
+}
+
+.fonte-bold {
+    font-weight: bold;
+}
+
+.brand-logo {
     margin-left: 20px;
 }
-.dark-container{
+
+.dark-container {
     background-color: #f4f4f4;
     padding-left: 7vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 
-.icons-font{
+.icons-font {
     font-size: 35pt;
     color: #3f3f3f;
 }
 
-.container{
-    width: initial!important;
+.container {
+    width: initial !important;
 }
 
 html {
