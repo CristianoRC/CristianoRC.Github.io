@@ -29,11 +29,27 @@ main {
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+.corPrimaria {
+    color: #25303f !important;
+}
+
+.corPrimaria:hover {
+    color: #17a2b8 !important;
+}
 
 #nome {
     margin-top: 30vh;
     margin-left: 3vw;
 }
+
+#sobre {
+    padding: 0 5vw;
+}
+
 
 .menu-selecionado {
     color: #17a2b8;
@@ -61,13 +77,14 @@ main {
 
 .icons-font {
     font-size: 35pt;
-    color: #3f3f3f;
 }
+
+.icons-social {
+    font-size: 16pt;
+    font-weight: 100;
+}
+
 
 .container {
     width: initial !important;
-}
-
-html {
-    scroll-behavior: smooth;
 }
