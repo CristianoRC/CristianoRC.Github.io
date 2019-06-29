@@ -41,6 +41,14 @@ html {
     color: #17a2b8 !important;
 }
 
+.corSecundaria {
+    color: #17a2b8 !important;
+}
+
+.corSecundaria:hover {
+    color: #25303f !important;
+}
+
 #nome {
     margin-top: 30vh;
     margin-left: 3vw;
