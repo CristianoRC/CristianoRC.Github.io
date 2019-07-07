@@ -34,10 +34,19 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <img class="materialboxed" width="60" src="img/icon.png">
       </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#habilidades">Habilidades</a></li>
+        <li><a class="menu-selecionado" href="#">Artigos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <ul id="mobile-nav" class="sidenav">
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#habilidades">Habilidades</a></li>
         <li><a class="menu-selecionado" href="#">Artigos</a></li>
@@ -204,8 +213,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.slider');
-      var instances = M.Slider.init(elems, {});
+      var nav = document.querySelectorAll('.sidenav');
+      var instancesNav = M.Sidenav.init(nav, {});
     });
   </script>
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <meta name="author" content="Cristiano Raffi Cunha">
   <meta name="description" content="Olá, meu nome é Cristiano, 20 anos, desenvolvedor .NET. Apaixonado por desenvolvimento de software,
   eletrônica e o mundo open source.">
@@ -38,12 +39,21 @@
         <a href="#" class="brand-logo">
           <img class="materialboxed" width="60" src="img/icon.png">
         </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a class="menu-selecionado" href="#sobre">Home</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="artigos.html">Artigos</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
+
+        <ul class="sidenav" id="mobile-nav">
+          <li><a class="menu-selecionado" href="#sobre">Home</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
       </div>
     </nav>
 
@@ -184,6 +194,9 @@
                   Desenvolvimento do back-end e front-end, manutenção, implantação e suporte aos sistemas desenvolvidos
                   pela empresa.
                 </div>
+                <div class="row">
+                  Junho 2018 - Atual
+                </div>
               </div>
             </div>
 
@@ -197,6 +210,9 @@
                 <div class="row">
                   Instalação, verificação e configuração de software e equipamentos elétricos e soluções na área de
                   Tecnologia da Informação.
+                </div>
+                <div class="row">
+                  Abril 2016 - Março 2018
                 </div>
               </div>
               <div class="col s6 left-align">
@@ -225,8 +241,9 @@
                   <h3>DotCEP</h3>
                   <h5 class="light grey-text text-lighten-3">Biblioteca para facilitar o trabalho com CEP na plataforma
                     .NET</h5>
-                    <a class="grey darken-4 waves-effect waves-light btn mt20" href="https://github.com/CristianoRC/DotCEP"
-                    target="_blank"><i class="fab fa-github left"></i>Repositorio</a>
+                  <a class="grey darken-4 waves-effect waves-light btn mt20"
+                    href="https://github.com/CristianoRC/DotCEP" target="_blank"><i
+                      class="fab fa-github left"></i>Repositorio</a>
                 </div>
               </li>
               <li>
@@ -236,8 +253,9 @@
                   <h5 class="light grey-text text-lighten-3">Projeto desenvolvido para informatizar o sistema de ordem
                     de
                     serviço, principalmente para a área de equipamentos eletrônicos.</h5>
-                  <a class="grey darken-4 waves-effect waves-light btn mt20" href="https://github.com/CristianoRC/SoftwareOrdemDeServico"
-                    target="_blank"><i class="fab fa-github left"></i>Repositorio</a>
+                  <a class="grey darken-4 waves-effect waves-light btn mt20"
+                    href="https://github.com/CristianoRC/SoftwareOrdemDeServico" target="_blank"><i
+                      class="fab fa-github left"></i>Repositorio</a>
                 </div>
               </li>
               <li>
@@ -246,8 +264,9 @@
                   <h3>LogBook eletrônico</h3>
                   <h5 class="light grey-text text-lighten-3">Registra de cargas dos motoristas de empresas virtuais
                     Euro Truck Simulator 2</h5>
-                  <a class="grey darken-4 waves-effect waves-light btn mt20" href="https://github.com/CristianoRC/NextTeamBr"
-                    target="_blank"><i class="fab fa-github left"></i>Repositorio</a>
+                  <a class="grey darken-4 waves-effect waves-light btn mt20"
+                    href="https://github.com/CristianoRC/NextTeamBr" target="_blank"><i
+                      class="fab fa-github left"></i>Repositorio</a>
                 </div>
               </li>
               <li>
@@ -256,8 +275,9 @@
                   <h3>Remoção de virus - pendrive</h3>
                   <h5 class="light grey-text text-lighten-3">Projeto desenvolvido para facilitar a remoção do vìrus que
                     transforma os arquivos do seu pendrive em atalhos. </h5>
-                  <a class="grey darken-4 waves-effect waves-light btn mt20" href="https://github.com/CristianoRC/RemocaoVirusPendrive"
-                    target="_blank"><i class="fab fa-github left"></i>Repositorio</a>
+                  <a class="grey darken-4 waves-effect waves-light btn mt20"
+                    href="https://github.com/CristianoRC/RemocaoVirusPendrive" target="_blank"><i
+                      class="fab fa-github left"></i>Repositorio</a>
                 </div>
               </li>
             </ul>
@@ -283,6 +303,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      var nav = document.querySelectorAll('.sidenav');
+      var instancesNav = M.Sidenav.init(nav, {});
+
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems, {});
     });
