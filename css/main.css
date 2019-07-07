@@ -1,0 +1,98 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #25303f !important;
+}
+
+footer {
+    background-color: #25303f !important;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.corPrimaria {
+    color: #25303f !important;
+}
+
+.corPrimaria:hover {
+    color: #17a2b8 !important;
+}
+
+.corSecundaria {
+    color: #17a2b8 !important;
+}
+
+.corSecundaria:hover {
+    color: #25303f !important;
+}
+
+#nome {
+    margin-top: 30vh;
+    margin-left: 3vw;
+}
+
+#sobre {
+    padding: 0 5vw;
+}
+
+
+.menu-selecionado {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.fonte-branca {
+    color: white;
+}
+
+.fonte-bold {
+    font-weight: bold;
+}
+
+.brand-logo {
+    margin-left: 20px;
+}
+
+.dark-container {
+    background-color: #f4f4f4;
+    padding-left: 7vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.icons-font {
+    font-size: 35pt;
+}
+
+.icons-social {
+    font-size: 16pt;
+    font-weight: 100;
+}
+
+
+.container {
+    width: initial !important;
+}
