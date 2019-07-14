@@ -57,6 +57,10 @@ h2 {
   font-size: 3rem;
 }
 
+.list-inline-item{
+  color: #495057;
+}
+
 .list-icons .list-inline-item i:hover {
   color: #46879C;
 }
