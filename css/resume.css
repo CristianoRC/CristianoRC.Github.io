@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   padding-top: 54px;
   color: #868e96;
   background-color: rgb(247, 245, 245);
@@ -18,8 +18,13 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Saira Extra Condensed', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -37,7 +42,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
 }
 
@@ -46,7 +51,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #46879C;
+  color: #46879c;
 }
 
 .list-social-icons a .fa-lg {
@@ -57,12 +62,12 @@ h2 {
   font-size: 3rem;
 }
 
-.list-inline-item{
+.list-inline-item {
   color: #495057;
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #46879C;
+  color: #46879c;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -141,14 +146,16 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
-  color: #46879C !important;
+  color: #46879c !important;
 }
 
 a {
-  color: #4A7385;
+  color: #4a7385;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: #002e66;
 }
 
@@ -168,6 +175,29 @@ a:hover, a:focus, a:active {
   color: white;
 }
 
-#sobre p{
+#sobre p {
   text-transform: none;
+}
+
+.lecure-icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.lecure-title {
+  color: #25303f;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.lecure-description {
+  margin-left: 45px;
+}
+
+.lecure-links-container {
+  margin-left: 45px;
+}
+
+.lecture-links {
+  margin-right: 10px;
 }
