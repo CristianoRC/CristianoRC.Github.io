@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.cristianoprogramador.com/sitemap.xml
