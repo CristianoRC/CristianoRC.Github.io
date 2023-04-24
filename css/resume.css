@@ -94,8 +94,9 @@ h2 {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.3rem solid rgba(255, 255, 255, 0.2);
+    border: 0.3rem solid rgba(70, 135, 156);
   }
+  
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
