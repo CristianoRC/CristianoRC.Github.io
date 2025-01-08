@@ -202,3 +202,25 @@ a:active {
 .lecture-links {
   margin-right: 10px;
 }
+
+.position-item {
+  border-left: 2px solid #4a7385;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.position-item:first-child {
+  margin-top: 10px;
+}
+
+.position-date {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .position-item {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
