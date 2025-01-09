@@ -206,11 +206,11 @@ a:active {
 
 .position-item {
   margin-left: 0px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .position-item:first-child {
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .position-date {
