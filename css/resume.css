@@ -44,6 +44,7 @@ h2 {
   font-weight: 500;
   font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
+  color: #4a7385;
 }
 
 .list-social-icons a {
@@ -204,9 +205,7 @@ a:active {
 }
 
 .position-item {
-  border-left: 2px solid #4a7385;
-  padding-left: 15px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 20px;
 }
 
@@ -216,6 +215,7 @@ a:active {
 
 .position-date {
   font-size: 0.9em;
+  color: #4a7385;
 }
 
 @media (max-width: 768px) {
