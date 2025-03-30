@@ -766,19 +766,23 @@
       }
     }
 
-    document.getElementById('checkbox').addEventListener('change', toggleTheme);
-
     function setInitialTheme() {
       const savedTheme = localStorage.getItem('theme');
       const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const checkbox = document.getElementById('checkbox');
       
-      if (savedTheme === 'dark' || (savedTheme === null && prefersDarkScheme)) {
+      const theme = savedTheme === 'dark' || (savedTheme === null && prefersDarkScheme) ? 'dark' : 'light';
+      
+      if (theme === 'dark') {
         document.body.classList.add('dark-mode');
         checkbox.checked = true;
+        updateIcons('dark');
+      } else {
+        updateIcons('light');
       }
     }
 
+    document.getElementById('checkbox').addEventListener('change', toggleTheme);
     document.addEventListener('DOMContentLoaded', setInitialTheme);
   </script>
 </body>
