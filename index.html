@@ -35,6 +35,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.css" rel="stylesheet">
+  <link href="css/dark-theme.css" rel="stylesheet">
 
   <link rel="icon" type="image/x-icon" href="./img/icon.ico">
 
@@ -81,6 +82,11 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#educacao">Educação</a>
+        </li>
+        <li class="nav-item">
+          <button id="theme-toggle" class="btn btn-sm mt-2">
+            <i class="fas fa-moon"></i>
+          </button>
         </li>
       </ul>
     </div>
@@ -740,6 +746,42 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/resume.min.js"></script>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const themeToggle = document.getElementById('theme-toggle');
+      const icon = themeToggle.querySelector('i');
+      
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+    function setInitialTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const themeToggle = document.getElementById('theme-toggle');
+      const icon = themeToggle.querySelector('i');
+      
+      if (savedTheme === 'dark' || (savedTheme === null && prefersDarkScheme)) {
+        document.body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', setInitialTheme);
+  </script>
 </body>
 
 </html>
