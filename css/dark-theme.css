@@ -185,4 +185,41 @@ input:checked + .slider .moon {
 /* Centralizar no menu */
 #sideNav .navbar-nav {
   align-items: center;
+}
+
+.tech-icon {
+  color: #333; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .tech-icon {
+    color: white; 
+  }
+}
+
+.dark-mode .tech-icon {
+  color: white; 
+}
+
+.tech-icon:hover {
+  transform: scale(1.1); 
+}
+
+body.dark-mode [class*="devicon-"] {
+  color: white !important;
+}
+
+body.dark-mode .devicon-* {
+  color: white !important;
+}
+
+body.dark-mode i[class*="devicon-"] {
+  color: white !important;
+}
+
+body.dark-mode .skill-icon, 
+body.dark-mode .language-icon, 
+body.dark-mode .framework-icon {
+  color: white !important;
+  filter: brightness(1) invert(1);
 } 
