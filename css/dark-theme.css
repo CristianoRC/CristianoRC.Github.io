@@ -1,11 +1,11 @@
 /* Estilos para o tema escuro */
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #1e2429;
+  color: #e4e6eb;
 }
 
 body.dark-mode .bg-primary {
-  background-color: #1e2732 !important;
+  background-color: #25303f !important;
 }
 
 body.dark-mode .text-primary {
@@ -13,7 +13,7 @@ body.dark-mode .text-primary {
 }
 
 body.dark-mode .resume-section {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #2c3440;
 }
 
 body.dark-mode h1, 
@@ -44,11 +44,11 @@ body.dark-mode .list-social-icons a:hover {
 }
 
 body.dark-mode .fa-circle {
-  color: #333;
+  color: #2a343f;
 }
 
 body.dark-mode .img-profile {
-  border: 0.5rem solid rgba(70, 70, 70, 0.5);
+  border: 0.5rem solid rgba(70, 135, 156, 0.3);
 }
 
 body.dark-mode #theme-toggle {
