@@ -1,0 +1,92 @@
+/* Estilos para o tema escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-primary {
+  background-color: #1e2732 !important;
+}
+
+body.dark-mode .text-primary {
+  color: #46879c !important;
+}
+
+body.dark-mode .resume-section {
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode .subheading {
+  color: #ffffff;
+}
+
+body.dark-mode .text-info {
+  color: #46879c !important;
+}
+
+body.dark-mode .nav-link {
+  color: #d0d0d0;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #46879c;
+}
+
+body.dark-mode .list-social-icons a {
+  color: #d0d0d0;
+}
+
+body.dark-mode .list-social-icons a:hover {
+  color: #46879c;
+}
+
+body.dark-mode .fa-circle {
+  color: #333;
+}
+
+body.dark-mode .img-profile {
+  border: 0.5rem solid rgba(70, 70, 70, 0.5);
+}
+
+body.dark-mode #theme-toggle {
+  color: #ffcc00;
+  background-color: transparent;
+  border: none;
+}
+
+body.dark-mode #theme-toggle:focus {
+  box-shadow: none;
+}
+
+body.dark-mode .resume-item {
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .position-date {
+  color: #aaaaaa;
+}
+
+body.dark-mode a {
+  color: #46879c;
+}
+
+body.dark-mode a:hover {
+  color: #5a9cb1;
+}
+
+#theme-toggle {
+  color: #ffcc00;
+  background-color: transparent;
+  border: none;
+}
+
+#theme-toggle:focus {
+  box-shadow: none;
+}
+
+body.dark-mode .lecure-title {
+  color: #7bbfd2;
+} 
