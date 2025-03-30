@@ -83,10 +83,16 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#educacao">Educação</a>
         </li>
-        <li class="nav-item">
-          <button id="theme-toggle" class="btn btn-sm mt-2">
-            <i class="fas fa-moon"></i>
-          </button>
+        <li class="nav-item d-flex justify-content-center">
+          <div class="theme-switch-wrapper mt-3">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round">
+                <span class="moon"><i class="fas fa-moon"></i></span>
+                <span class="sun"><i class="fas fa-sun"></i></span>
+              </div>
+            </label>
+          </div>
         </li>
       </ul>
     </div>
@@ -749,34 +755,29 @@
   <script>
     function toggleTheme() {
       const body = document.body;
-      const themeToggle = document.getElementById('theme-toggle');
-      const icon = themeToggle.querySelector('i');
+      const checkbox = document.getElementById('checkbox');
       
       if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+        checkbox.checked = false;
         localStorage.setItem('theme', 'light');
       } else {
         body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        checkbox.checked = true;
         localStorage.setItem('theme', 'dark');
       }
     }
 
-    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    document.getElementById('checkbox').addEventListener('change', toggleTheme);
 
     function setInitialTheme() {
       const savedTheme = localStorage.getItem('theme');
       const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const themeToggle = document.getElementById('theme-toggle');
-      const icon = themeToggle.querySelector('i');
+      const checkbox = document.getElementById('checkbox');
       
       if (savedTheme === 'dark' || (savedTheme === null && prefersDarkScheme)) {
         document.body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        checkbox.checked = true;
       }
     }
 

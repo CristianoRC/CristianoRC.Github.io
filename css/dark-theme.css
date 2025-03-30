@@ -88,5 +88,97 @@ body.dark-mode a:hover {
 }
 
 body.dark-mode .lecure-title {
-  color: #7bbfd2;
+  color: #5a9cb1;
+}
+
+/* Estilos para o botão de toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  width: 54px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #2d4157;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #2d4157;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.moon, .sun {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.moon {
+  left: 5px;
+  top: 4px;
+  color: transparent;
+  transition: .3s;
+}
+
+.sun {
+  right: 5px;
+  top: 4px;
+  color: #ffc107;
+  transition: .3s;
+}
+
+input:checked + .slider .sun {
+  color: transparent;
+}
+
+input:checked + .slider .moon {
+  color: #ffc107;
+}
+
+/* Centralizar no menu */
+#sideNav .navbar-nav {
+  align-items: center;
 } 
