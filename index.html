@@ -31,6 +31,9 @@
   <!-- Preload critical resources -->
   <link rel="preload" href="css/resume.css" as="style">
   <link rel="preload" href="img/profile.png" as="image">
+  <link rel="preload" href="https://fonts.gstatic.com" as="dns-prefetch" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +44,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
   rel="stylesheet" crossorigin="anonymous">
   <link href="./vendor/font-awesome/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -141,8 +144,9 @@
         <img class="img-fluid img-profile rounded-circle mx-auto mb-5" 
              src="img/profile.png" 
              alt="Foto de perfil de Cristiano Raffi Cunha - Staff Engineer"
-             loading="lazy"
+             loading="eager"
              width="200" 
+             height="200" 
              height="200">
       </span>
     </a>
