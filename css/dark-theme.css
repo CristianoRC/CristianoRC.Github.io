@@ -209,9 +209,6 @@ body.dark-mode [class*="devicon-"] {
   color: white !important;
 }
 
-body.dark-mode .devicon-* {
-  color: white !important;
-}
 
 body.dark-mode i[class*="devicon-"] {
   color: white !important;
