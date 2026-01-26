@@ -14,7 +14,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cristianoprogramador.com/" />
   <meta property="og:title" content="Cristiano Raffi Cunha - Microsoft MVP & Staff Engineer" />
-  <meta property="og:description" content="Microsoft MVP e Staff Engineer especializado em .NET, arquitetura de software, microsserviços e segurança de aplicações. Mais de 7 anos de experiência em desenvolvimento e liderança técnica." />
+  <meta property="og:description" content="Microsoft MVP e Staff Engineer especializado em .NET, arquitetura de software, microsserviços e segurança de aplicações. Mais de 10 anos de experiência em desenvolvimento e liderança técnica." />
   <meta property="og:image" content="https://cristianoprogramador.com/img/CristianoCunha.jpeg" />
   <meta property="og:site_name" content="Cristiano Raffi Cunha" />
 
@@ -31,7 +31,7 @@
   <!-- Preload critical resources -->
   <link rel="preload" href="css/resume.css" as="style">
   <link rel="preload" href="img/profile.png" as="image">
-  <link rel="preload" href="https://fonts.gstatic.com" as="dns-prefetch" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -506,9 +506,10 @@
               <div class="subheading mb-2">Suporte Técnico</div>
               <div class="position-date mb-2">Abril 2016 - Março 2018</div>
               <p>Instalação, verificação e configuração de software e equipamentos elétricos e soluções na área de
-                Tecnologia da Informação, e Atendimento a clientes internos.</br>
+                Tecnologia da Informação, e Atendimento a clientes internos.<br>
                 Aqui também tive a oportunidades que criar
                 pequenos softwares desktop para facilitar o trabalho, como o de remover o vírus de atalho de pendrive.
+              </p>
               <p>
                 <strong>Tecnologias</strong>: C#, Windows Forms
               </p>
@@ -873,9 +874,6 @@
       if (theme === 'dark') {
         document.body.classList.add('dark-mode');
         checkbox.checked = true;
-        updateIcons('dark');
-      } else {
-        updateIcons('light');
       }
     }
 
