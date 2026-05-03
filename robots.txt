@@ -1,4 +1,8 @@
 User-Agent: *
 Allow: /
+Disallow: /Manuten%C3%A7%C3%A3o/
+Disallow: /vendor/
+Disallow: /google71f82c2255d0a0bc.html
+Disallow: /404.html
 
 Sitemap: https://www.cristianoprogramador.com/sitemap.xml
