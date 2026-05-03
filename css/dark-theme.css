@@ -92,7 +92,7 @@ body.dark-mode .lecure-title {
 }
 
 body.dark-mode .lecure-icon {
-  filter: brightness(0) invert(1);  /* Isso inverte a cor para branco no modo escuro */
+  color: #5a9cb1;
 }
 
 /* Estilos para o botão de toggle */
