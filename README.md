@@ -1,6 +1,6 @@
 # CristianoRC.Github.io
 
-[![pages-build-deployment](https://github.com/CristianoRC/CristianoRC.Github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/CristianoRC/CristianoRC.Github.io/actions/workflows/pages/pages-build-deployment)
+[![Deploy static content to Pages](https://github.com/CristianoRC/CristianoRC.Github.io/actions/workflows/deploy.yaml/badge.svg?branch=main)](https://github.com/CristianoRC/CristianoRC.Github.io/actions/workflows/deploy.yaml)
 
 Site Pessoal
 
