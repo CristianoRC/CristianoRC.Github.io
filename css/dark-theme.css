@@ -95,6 +95,14 @@ body.dark-mode .lecure-icon {
   color: #5a9cb1;
 }
 
+body.dark-mode .impact-number {
+  color: #5a9cb1;
+}
+
+body.dark-mode .impact-label {
+  color: #aaaaaa;
+}
+
 /* Estilos para o botão de toggle */
 .theme-switch-wrapper {
   display: flex;

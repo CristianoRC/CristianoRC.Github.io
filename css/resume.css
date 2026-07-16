@@ -228,3 +228,31 @@ a:active {
     padding-left: 10px;
   }
 }
+
+/* Faixa de números / impacto */
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.25rem;
+  padding: 0;
+}
+
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.impact-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a7385;
+}
+
+.impact-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  color: #868e96;
+}
