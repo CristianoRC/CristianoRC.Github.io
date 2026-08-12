@@ -48,3 +48,6 @@ Temporary Items
 
 # Node
 node_modules/
+
+# Rascunhos de currículo e material pessoal (não versionar)
+curriculo-privado/
